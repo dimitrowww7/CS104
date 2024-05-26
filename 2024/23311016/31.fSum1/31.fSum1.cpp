@@ -5,16 +5,15 @@ using namespace std;
 
 int main()
 {
-	int n;
-	float result = 0;
-	cout << "Please enter n: ";
-	cin >> n;
+	int n, x;
+	int sum = 0;
+	cout << "Please enter n, x: ";
+	cin >> n >> x;
 
 	for (int i = 1; i <= n; i++)
 	{
-		result = pow(1.0 + (1.0 / i), i);
-		cout << result << " ";
+		sum = sum + pow(x, i);
 	}
-
+	cout << "Sum is: " << sum << endl;
 	return 0;
 }
